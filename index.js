@@ -1,7 +1,7 @@
 // 1. Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93.
 console.log("1. Create an array called ages that contains the following values: 3, 9, 23, 64, 2, 8, 28, 93. ");
-var ages = [3, 9, 23, 64, 2, 8, 28, 93];
-let f = ages.shift(0); // Created a variable for the first value in the array
+let ages = [3, 9, 23, 64, 2, 8, 28, 93];
+let f = ages.slice(0, 1); // Created a variable for the first value in the array
 let l = ages.pop(); // Created a variable for the last value in the array
 
 // 1a. Programmatically subtract the value of the first element in the array from the value in the last element of the array.
@@ -11,6 +11,8 @@ console.log(l - f); // Subtracting the first value from the last value
 // 1b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).
 console.log("1b. Add a new age to your array and repeat the step above to ensure it is dynamic. (works for arrays of different lengths).");
 ages.push(7); // Added the value 7 as the last value using .push
+f = ages.slice(0, 1);
+l = ages.pop();
 console.log(l - f); // Subtracting the first value from the last value
 
 // 1c. Use a loop to iterate through the array and calculate the average age.
